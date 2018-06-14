@@ -11,7 +11,12 @@ module.exports = {
             provider: new LedgerWalletProvider(ledgerOptions, "https://mainnet.infura.io/" + infura_apikey),
             network_id: 1,
 		gas: 4600000
-        }
+        },
+	testrpc:{
+		host:"localhost",
+		port: 8545,
+		network_id: "*"
+	}
     }
 };
 
